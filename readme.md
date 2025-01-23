@@ -1,15 +1,19 @@
-Este código realiza web scraping para extrair todos os links (URLs) de uma página da web e os salva em um arquivo de texto. Ele utiliza as bibliotecas Requests e BeautifulSoup para fazer requisições HTTP e processar o HTML da página.
+# Visão Geral:
+Este script realiza web scraping para extrair todos os links (URLs) de uma página da web e os salva em um arquivo texto. Ele utiliza as bibliotecas Requests e BeautifulSoup para fazer requisições HTTP e processar o HTML da página.
 
-Principais Funcionalidades:
-
-Requisição HTTP: Faz uma requisição à URL fornecida pelo usuário e obtém o conteúdo HTML da página.
-Extração de URLs: Usa o BeautifulSoup para analisar o HTML e extrair todas as URLs presentes nas tags <a> (links).
-Tratamento de erros: Inclui tratamento para erros comuns, como falhas de conexão, tempo limite e erros de solicitação HTTP.
-Armazenamento de URLs: Salva todas as URLs capturadas em um arquivo de texto (urls.txt), facilitando o acesso posterior.
-
-Como Funciona:
-
+# Funcionamento:
 O código solicita ao usuário que insira a URL da página da web que deseja fazer scraping.
+<br>
 A função extrair_urls faz uma requisição à URL usando um cabeçalho de "User-Agent" customizado para simular um navegador real.
+<br>
 Se a requisição for bem-sucedida, o código usa o BeautifulSoup para localizar todas as tags <a> e extrair os links das páginas.
-As URLs extraídas são salvas em um arquivo de texto chamado urls.txt.
+<br>
+As URLs extraídas são salvas em um arquivo texto chamado urls.txt.
+
+# Dependências:
+requests: Biblioteca usada para fazer requisições HTTP.
+<br>
+beautifulsoup4 (geralmente importada como BeautifulSoup): Biblioteca usada para fazer parsing de documentos HTML e XML, permitindo extrair informações de forma estruturada.
+
+# Como Usar:
+Execute o script com o seguinte comando: py scrap.py ou python scrap.py.
