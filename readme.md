@@ -11,9 +11,7 @@ Se a requisição for bem-sucedida, o código usa o BeautifulSoup para localizar
 As URLs extraídas são salvas em um arquivo texto chamado urls.txt.
 
 # Dependências:
-requests: Biblioteca usada para fazer requisições HTTP.
-<br>
-beautifulsoup4 (geralmente importada como BeautifulSoup): Biblioteca usada para fazer parsing de documentos HTML e XML, permitindo extrair informações de forma estruturada.
+Dependências listadas no arquivo "requirements.txt".
 
 # Como Usar:
 Execute o script com o seguinte comando: py scrap.py ou python scrap.py.
